@@ -488,12 +488,13 @@
             <br>
             <button type="submit">Check Website</button>
         </form>
-
-        
-                <div class="result safe">{{ result }}</div>
-            
-                <div class="result phishing">{{ result }}</div>
-            
+                {% if result %}
+                    {% if "Safe" in result %}
+                        <div class="result safe">{{ result }}</div>
+                    {% else %}
+                        <div class="result phishing">{{ result }}</div>
+                    {% endif %}
+                {% endif %} 
     </div>
 
     <!-- SECURITY TIPS SECTION -->
