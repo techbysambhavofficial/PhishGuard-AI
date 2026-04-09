@@ -44,5 +44,5 @@ def extract_features(url):
 
     except Exception as e:
         # --- Fallback: must return EXACTLY 18 features ---
-        return [0]*18
         print(f"Error extracting features from URL {url}: {e}")
+        return [0]*18
