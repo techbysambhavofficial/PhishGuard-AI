@@ -5,7 +5,7 @@
     <title>Phishing Website Detection</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Reset and body */
+        
         * {
             box-sizing: border-box;
             margin: 0;
@@ -24,7 +24,7 @@
             position: relative;
         }
 
-        /* ====== BEAUTIFUL HEADER ====== */
+      
         .header-container {
             width: 100%;
             background: linear-gradient(135deg, #1a2980, #26d0ce);
@@ -489,13 +489,11 @@
             <button type="submit">Check Website</button>
         </form>
 
-        {% if result %}
-            {% if "Safe" in result %}
+        
                 <div class="result safe">{{ result }}</div>
-            {% else %}
+            
                 <div class="result phishing">{{ result }}</div>
-            {% endif %}
-        {% endif %}
+            
     </div>
 
     <!-- SECURITY TIPS SECTION -->

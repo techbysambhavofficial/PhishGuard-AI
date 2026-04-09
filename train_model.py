@@ -26,8 +26,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # Train RandomForest
 model = RandomForestClassifier(
-    n_estimators=500,
-    max_depth=None,
+    n_estimators=50,
+    max_depth=10,
     min_samples_split=5,
     class_weight='balanced',
     random_state=42
