@@ -1,150 +1,150 @@
+Phishing Website Detection System 🛡️
 
-```md
-# Phishing Website Detection System 🛡️
+A Machine Learning based web application that detects whether a given website URL is phishing (malicious) or legitimate (safe).
 
-A Machine Learning–based web application that detects whether a given website URL is **phishing (malicious)** or **legitimate (safe)**.
+This project uses Python, Flask, and Random Forest to analyze URL based features and predict whether a website is safe or suspicious.
 
-This project uses **Python, Flask, and Random Forest** to analyze URL features and predict phishing websites.
+PROJECT OVERVIEW
 
----
+Phishing websites are fake websites designed to steal sensitive information such as passwords, OTPs, banking details, and personal data.
 
-## 📂 Project Structure
+This system helps users by analyzing a website URL and predicting whether it is:
 
-```
+Legitimate Website (Safe)
+Phishing Website (Malicious)
+
+The prediction is made using a trained Machine Learning model.
+
+PROJECT STRUCTURE
 
 PHISHING_DETECTOR/
-│
-├── app.py                     # Flask web application
-├── train_model.py              # Model training script
-├── feature_extraction.py       # URL feature extraction logic
-├── model.pkl                   # Trained ML model
-├── dataset.csv                 # Dataset used for training
+
+├── app.py
+├── train_model.py
+├── feature_extraction.py
+├── model.pkl
 ├── templates/
-│   └── index.html              # Frontend HTML page
-├── screenshots/                # Project screenshots
-├── **pycache**/                # Python cache files
-├── .gitignore                  # Ignored files for GitHub
-├── README.md                   # Project documentation
-├── allfiles.txt                # Supporting file
-└── bigobjects.txt              # Supporting file
+│ └── index.html
+├── screenshots/
+├── dataset_sample.csv
+├── .gitignore
+├── README.md
+├── allfiles.txt
+└── bigobjects.txt
 
-````
+FEATURES
 
----
+Detects phishing and legitimate URLs
+Uses Random Forest Classifier
+Flask based web interface
+URL feature extraction system
+Fast and simple prediction
+Beginner friendly project structure
 
-## 🚀 Features
+MACHINE LEARNING MODEL
 
-- Detects **phishing and legitimate URLs**
-- Uses **Random Forest Classifier**
-- Flask-based **web interface**
-- Extracts multiple **URL-based features**
-- Easy to run and understand
+Algorithm Used: Random Forest Classifier
 
----
+Input: Website URL
 
-## 🧠 Machine Learning Model
+Output:
 
-- **Algorithm Used:** Random Forest
-- **Input:** Website URL
-- **Output:**  
-  - `0` → Legitimate Website  
-  - `1` → Phishing Website
+0 = Legitimate Website
+1 = Phishing Website
 
----
+TECHNOLOGIES USED
 
-## 🛠️ Technologies Used
+Python
+Flask
+Scikit-learn
+Pandas
+NumPy
+HTML
+CSS
 
-- Python 🐍
-- Flask 🌐
-- Scikit-learn 🤖
-- Pandas & NumPy 📊
-- HTML / CSS 🎨
+WHY dataset.csv IS REMOVED FROM GITHUB
 
----
+The original dataset.csv file is large in size, so it has been removed from this repository to keep the project lightweight and GitHub friendly.
 
-## ▶️ How to Run the Project
+Large files can:
 
-### 1️⃣ Install Dependencies
-```bash
+Slow down repository loading
+Increase upload time
+Cause GitHub size issues
+
+You can use your own dataset or create a new dataset with the same format.
+
+SAMPLE DATASET FORMAT
+
+Create a file named:
+
+dataset_sample.csv
+
+Use this format:
+
+URL,Label
+https://google.com,good
+
+https://github.com,good
+
+https://amazon.in,good
+
+http://paypal-login-secure-update.xyz,bad
+
+http://freegift-win-now.tk,bad
+
+http://bank-verification-alert.cf,bad
+
+Label Meaning:
+
+good = Legitimate Website
+bad = Phishing Website
+
+If needed, rename dataset_sample.csv to dataset.csv before training.
+
+HOW TO RUN THE PROJECT
+
+Install Dependencies
+
 pip install flask pandas numpy scikit-learn
-````
 
-### 2️⃣ Train the Model (Optional)
+Train the Model (Optional)
 
-```bash
 python train_model.py
-```
 
-> This will generate `model.pkl`
+This will generate:
 
-### 3️⃣ Run the Flask App
+model.pkl
 
-```bash
+Run the Flask App
+
 python app.py
-```
 
-### 4️⃣ Open in Browser
+Open in Browser
 
-```
 http://127.0.0.1:5000/
-```
 
----
+SCREENSHOTS
 
-## 📸 Screenshots
+Project screenshots are available inside the screenshots folder.
 
-Screenshots of the project UI are available in the `screenshots` folder.
-
----
-
-## ⚠️ Note
-
-* The `model.pkl` and `dataset.csv` files may be excluded from GitHub using `.gitignore` due to size limits.
-* You can regenerate the model by running `train_model.py`.
-
----
-
-## 🎓 Academic Use
+ACADEMIC USE
 
 This project is suitable for:
 
-* B.Tech / Engineering Mini Project
-* Machine Learning Project
-* Cyber Security Project
-* Final Year / Semester Submission
+B.Tech Mini Project
+Machine Learning Project
+Cyber Security Project
+Final Year Project
+Semester Submission
 
----
+AUTHOR
 
-## 👤 Author
+Sambhav Raj
 
-**Sambhav Raj**
 B.Tech Student
 Cyber Security | Machine Learning | Web Development
 
----
+LICENSE
 
-## 📜 License
-
-This project is for **educational purposes only**.
-
-```
-
----
-
-## ✅ Why this README is GOOD
-✔ Clean & professional  
-✔ Matches your folder structure  
-✔ Viva-ready explanation  
-✔ GitHub-friendly  
-✔ Teacher-approved format  
-
----
-
-If you want, I can also:
-- 🔥 Shorten it for **college submission**
-- 🧪 Add **sample test URLs**
-- 🌍 Improve **project description**
-- 📄 Convert it into **project report format**
-
-Just say the word 😄
-```
+This project is for educational purposes only.
